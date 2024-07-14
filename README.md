@@ -27,3 +27,21 @@ python3 -m pip install requirements.txt
 ```
 
 NOTE: You will see ``` -e . ```. This is used to set up the project as my local package. Once you run the requirements.txt, it will search for the constructor files ```__init__.py``` and wherever it finds the file it will consider that folder as a local package. This will help to import files as packages like: ```from us_visa.components import data_ingestion```. Now if do ```pip list``` operation you will see us_visa has been added in the installed packages list.
+
+
+
+## Workflow:
+
+1. constants
+2. entity
+3. components
+4. pipeline
+5. Main file
+
+
+### Export the environment variable
+```bash
+export MONGODB_URL="mongodb+srv://<username>:<password>...."
+```
+
+
